@@ -16,7 +16,7 @@ body{font-family:trench;overflow-x:hidden}p{font-size:20px}p.small{font-size:16p
   pointer-events: none; /* for before hover conflict */
 }
 .grid{margin:0 auto;overflow: hidden;background-color: #fff}
-.grid-item{width: 350px;margin:5px;float: left;padding: 5px;border: 4px solid #2C3E50;background-color: #E7C95B;  background-image:url("../../../assets/media/images/noisy2.png") !important;}
+.grid-item{width: 350px;margin:5px;float: left;padding: 5px;border: 4px solid #2C3E50; background-image:url("../../../assets/media/images/noisy2.png") !important;}
 .grid-item img{border: 4px solid #2C3E50;}
 .grid-item pre{border: 2px solid #2C3E50;margin-top: 8px}
 
