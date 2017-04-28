@@ -1,0 +1,346 @@
+@font-face{
+  font-family: trench;
+  src: url("../fonts/PoiretOne.ttf");
+}
+
+.footer{
+  width: 100vw;
+  margin-top:-20px;
+  height:600px;
+  background-color: #202731;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_content{
+  height: 300px;
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #202731 url(../../../assets/media/images/noise-bg.png) repeat 0 0;
+}
+
+
+@media screen and (max-width:768px) {
+   
+   .footer_content{
+     flex-direction: column;
+   }
+   .right{
+     margin-top: 25% !important;
+   }
+
+ input,
+textarea {
+
+    width:85% !important;
+}
+
+.bar {
+     width:100% !important;
+  }
+
+  pre{
+        display: none !important;
+  }
+
+}
+
+.line{
+  width:2px;
+  position: relative;
+}
+.line:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-right: 1px solid #cfc7c0;
+    top: 10%;
+    bottom: 10%;
+}
+.left_side{
+   flex-grow: 2;
+   margin-right: 80px;
+}
+.left_side pre{
+   text-align: center;
+   margin-top: 7%;
+   color: #c6c6c6;
+  font-family: trench;
+  background-color: transparent;
+  border: none;
+  font-size: 1em !important;
+
+}
+pre i {
+  color:#3CB99C;
+}
+
+.right_side{
+  flex-grow: 2;
+  text-align: left;
+   margin-left: 80px;
+}
+
+.footer-social-icons{
+  margin-top:50px;
+  flex: 1;
+  order:1;
+  text-align: center;
+
+}
+
+.social-icon {
+    color: #000;
+}
+ul.social-icons {
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.social-icons i {
+  border: 3px solid #18BC9C;                                                                                           
+  background: transparent;
+}
+.social-icons i:hover {
+  color:#18BC9C;                                                                                           
+}
+
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 30%;
+
+}
+.fa-facebook:hover {
+    color:#18BC9C;                                                                                           
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+     border-radius: 30%;
+}
+
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+     border-radius: 30%;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+     border-radius: 30%;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+     border-radius: 30%;
+}
+
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+     border-radius: 30%;
+}
+
+
+.right{
+  flex: 1;
+  order:4;
+  text-align: center;
+  margin-top:70px;
+}
+
+.copyright{
+  color: #c6c6c6;
+  font-family: trench;
+  font-size: 14px;
+}
+
+
+/*---------- Contact ----------*/
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 50%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #3CB99C;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 90%;
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+label {
+  color: #c6c6c6;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 65%;
+}
+.bar:before {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #3CB99C;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  left: 0%;
+}
+.buttons {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+}
+.buttons a.button {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 10px 27px;
+    line-height: 1.8;
+    text-decoration: none;
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    position: relative;
+    transition: .25s ease-in-out;
+    border-radius: 70px;
+    border: 0.02em solid #18BC9C;                                                                                           ;
+}
+.buttons a.button:before, .buttons a.button:after, .buttons a.button span {
+  transition: .25s ease-in-out;
+}
+.buttons a.button.location {
+  position: relative;
+  overflow: hidden;
+}
+.buttons a.button.location span {
+  display: block;
+  position: relative;
+  bottom: 0px;
+}
+.buttons a.button.location:before {
+  content: '\f124';
+  font-family: FontAwesome;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  top: -100%;
+  left: 0;
+  position: absolute;
+}
+.buttons a.button.location:hover {
+  background: #0944af;
+}
+.buttons a.button.location:hover span {
+  bottom: -56px;
+}
+.buttons a.button.location:hover:before {
+  top: 0%;
+}
+.buttons a.button.mail {
+  position: relative;
+  overflow: hidden;
+}
+.buttons a.button.mail span {
+  display: block;
+  position: relative;
+  bottom: 0px;
+}
+.buttons a.button.mail:before {
+  content: '\f1d8';
+  font-family: FontAwesome;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  top: -100%;
+  left: 0;
+  position: absolute;
+}
+.buttons a.button.mail:hover {
+  background: #3CB99C;
+}
+.buttons a.button.mail:hover span {
+  bottom: -56px;
+}
+.buttons a.button.mail:hover:before {
+  top: 0%;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="az"  ng-app="rzaeeff">
+  <head>
+
+     <!--
+        Designed by R@sul Rz@yev
+        wwww.resulrzayev.com  www.resulrzayev.blogspot.com
+      -->
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <meta name="theme-color" content="#3F51B5">
+      <meta name="author" content="R@sul Rz@yev">
+      <meta name="description" content="Resul Rzayev personal webiste">
+      <meta name="keywords" content="Resul Rzayev,Programming tutorials,Software and Web Developer">
+
+      <link rel="icon" href="assets/media/images/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/media/images/favicon.png" type="image/x-icon">
+
+      
+      <link rel="stylesheet" type="text/css" href="assets/styles/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/styles/css/footer.css">
+
+      <!-- FONT AWSOME -->
+      <link rel="stylesheet" type="text/css" href="assets/styles/css/font-awesome.min.css">
+      <!-- ANIMATE -->
+      <link rel="stylesheet" type="text/css" href="assets/styles/css/animate.min.css">
+
+     <title>R&R | Resul Rzaeeff</title>
+  </head>
+
+  <body ng-controller="RzaeeffController">
+       <div class="header-background-image"></div>
+       <main>
+            <!-- entrance-section  -->
+             <section class="entrance section">
+                   <div class="corner"><i class="fa fa-code  top-corner-icon" aria-hidden="true"></i></div>
+
+                   <div class='flip-container'>
+                      <div class='creation'>
+                        <div class='front'>
+                          <div class='cont  animated infinite  pulse' style="animation-duration: 3s !important;">
+                            <img class="profile-image" src="assets/media/images/front_side-.jpg">
+                          </div>
+                        </div>
+                        <div class='back'>
+                          <div class='cont '>
+                            <img class="profile-image" src="assets/media/images/back_side.jpg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h1 class="home-title animated fadeInDown">RESUL RZA<span class=title_end>EEFF</span></h1>
+
+                     <div class='mouse-wrapper'>
+                        <div class="mouse-icon"></div>
+                        <div class="mouse-arrow"></div>
+                     </div>
+
+                   <div class="corner2"><i class="fa fa-paint-brush bottom-corner-icon" aria-hidden="true"></i></div></div>  
+             </section>
+            <!-- entrance-section END -->
+
+             <!-- menu-section  -->
+              <section class="menu section">
+
+                <div class="module about-me" ng-click="goTo('portfolio')">
+                  <div class="portfolio-title">
+                    <h3>PORTFOLIO</h1>
+                  </div>
+                  <div class="portfolio-center"><div id="bckg_portfolio"></div></div>
+                  <div class="portfolio-bottom"></div>
+                </div>
+
+
+                <div class="module tutorials" ng-click="goTo('tutorials')">
+                  <div class="tuts-title" >
+                    <h3>TUTORIALS</h1>
+                  </div>
+                  <div class="tuts-center tuts"><div id="bckg_tuts"></div></div>
+                  <div class="tuts-bottom"></div>
+                </div>
+
+
+                <div class="module drawings" ng-click="goTo('art')">
+                  <div class="art-title" >
+                    <h3>ART</h1>
+                  </div>
+                  <div class="art-center art"><div id="bckg_art"></div></div>
+                  <div class="art-bottom"></div>
+                </div>
+
+
+                <div class="module photos" ng-click="goTo('photography')">
+                  <div class="photography-title" >
+                    <h3>PHOTOGRAPHY</h1>
+                  </div>
+                  <div class="photography-center photography"><div id="bckg_photography"></div></div>
+                  <div class="photography-bottom photography"></div>
+                </div>
+
+              </section>
+              <!-- menu-section END -->
+ 
+       </main>
+   
+
+     <!-- Footer -->
+     <?php  include('modules/footer.html'); ?>
+
+      
+        <!-- jQuery -->
+        <script src="assets/scripts/js/jquery.min.js"></script>
+
+        <!--  FONT AWSOME JS -->
+        <script src="https://use.fontawesome.com/852fd2a7d5.js"></script>
+       
+        <!--  ANGULAR JS -->
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+       <script src="assets/scripts/js/App.js"></script>
+
+       <script>
+         $('.mouse-wrapper').click(function(){
+            $("html, body").animate({ scrollTop: $(window).height()+15}, 600);
+            return false;
+         });
+       </script>
+
+  </body>
+</html>
