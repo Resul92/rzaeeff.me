@@ -71,6 +71,7 @@ header {
   text-align: center;
   background: #18BC9C;
   color: white;
+  height: 100vh;
 }
 header .container {
   padding-top: 100px;
