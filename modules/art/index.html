@@ -188,7 +188,13 @@
    $( function() {
        $(".grid").imagesLoaded(function(){
                $('.grid').masonry({
-                 itemSelector: '.grid-item'
+                       itemSelector: '.grid-item',
+                       isAnimated: true,
+                       animationOptions: {
+                            duration: 700,
+                            easing: 'linear',
+                            queue: false
+                       }
                });
        }
    });
