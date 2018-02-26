@@ -222,10 +222,13 @@
     <script src="../../assets/scripts/js/portfolio.min.js"></script>
 
   <script>
+   
       $( function() {
-         $('.grid').masonry({
-            itemSelector: '.grid-item'
-         });
+            $(".grid").imagesLoaded(function(){
+                 $('.grid').masonry({
+                    itemSelector: '.grid-item'
+                 });
+            }
       });
   </script>
 
